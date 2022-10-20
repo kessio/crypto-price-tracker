@@ -35,8 +35,8 @@ const NavBar = () => {
         <li onClick={() => setNav(!nav)} className="md:hidden cursor-pointer pr-4 z-10 text-white">
           {nav ? <FaTimes size={30} /> : <FaBars size={20} />}
         </li>
-        <li className="flex"> 
-       <SearchBar/>
+        <li className="font-lato"> 
+        Live Prices
         </li>
         <li className="">
           <BsFillMicFill size={20} />

@@ -26,12 +26,15 @@ const DisplayCoins = ({
         <div className="flex mt-3">
           <span>
             {
-              
+
             changePercentToDecimal > 0
               ? <FaCaretUp size={20} color="#7CFC00" /> : <FaCaretDown size={20} color="red" />
             }
           </span>
-          <span className="text-white font-semibold">{changePercentToDecimal}%</span>
+          <span className="text-white font-semibold">
+            {changePercentToDecimal}
+            %
+          </span>
         </div>
       </div>
     </div>
