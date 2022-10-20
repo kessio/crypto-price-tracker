@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import Coins from './components/Coins';
+import Home from './components/Home';
 import NavBar from './components/NavBar';
 import { fetchCoins } from './redux/feature/price/prices';
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Coins />
+      <Home />
     </div>
   );
 }

@@ -7,13 +7,13 @@ const Coins = () => {
   const coinsList = prices.lists;
   const coinsAray = coinsList.data;
   return (
-    <div>
+    <div className="flex flex-wrap">
       {
 
       coinsAray?.map(({
-        id, name, rank, symbol, priceUsd, changePercent24Hr,
-      }) => (
-        <DisplayCoins key={id} name={name} rank={rank} symbol={symbol} priceUsd={priceUsd} changePercent24Hr={changePercent24Hr} />
+        id, name, symbol, priceUsd, changePercent24Hr,
+      }, index) => (
+        <DisplayCoins key={id} name={name} symbol={symbol} priceUsd={priceUsd} changePercent24Hr={changePercent24Hr} index={index} />
       ))
 }
     </div>
