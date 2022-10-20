@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaSistrix } from 'react-icons/fa';
 import { BsFillMicFill } from 'react-icons/bs';
+import SearchBar from './SearchCoin';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -20,25 +21,25 @@ const NavBar = () => {
      h-20 text-white fixed bg-nav py-2 px-8"
     >
       <ul className="hidden md:flex">
-        {links.map(({ id, name }) => (
+           {links.map(({ id, name }) => (
           <li
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-white
-                hover:scale-150 duration-200"
-          >
+                hover:scale-150 duration-200">
             {name}
           </li>
 
         ))}
       </ul>
-      <ul className="md:hidden flex flex-row justify-between w-screen">
+      <ul className="md:hidden flex flex-row justify-between w-screen pt-4">
         <li onClick={() => setNav(!nav)} className="md:hidden cursor-pointer pr-4 z-10 text-white">
           {nav ? <FaTimes size={30} /> : <FaBars size={20} />}
         </li>
-        <li>Live Coins Price</li>
-        <li className="flex justify-between">
-          <span className="pr-5"><BsFillMicFill /></span>
-          <span><FaSistrix /></span>
+        <li className="flex"> 
+       <SearchBar/>
+        </li>
+        <li className="">
+          <BsFillMicFill size={20} />
         </li>
       </ul>
       {nav && (
