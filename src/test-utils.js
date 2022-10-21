@@ -26,7 +26,3 @@ export default function renderWithProviders(
   }
   return rtlRender(ui, { wrapper: Wrapper, ...renderOptions });
 }
-
-Wrapper.prototype = {
-  children: PropTypes.string,
-};

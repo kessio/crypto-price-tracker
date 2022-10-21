@@ -14,8 +14,8 @@ const DisplayCoins = ({
   const changePercentToDecimal = chnagePercentToNumber.toFixed(2);
 
   return (
-    <Link to={`/coin/${id}`} className="bg-light w-1/2 h-36 border-b-2 border-darkCard md:w-1/4">
-      <div className="">
+  
+      <div className="bg-light w-1/2 h-36 border-b-2 border-darkCard md:w-1/4">
         <Link to={`/coin/${id}`}><FaArrowCircleRight className="w-100 float-right mt-2 mr-3 text-white" /></Link>
         <div className="ml-10 mt-5">
           <span className="flex text-3xl text-white font-lato font-extrabold">{symbol}</span>
@@ -40,7 +40,7 @@ const DisplayCoins = ({
           </div>
         </div>
       </div>
-    </Link>
+    
 
   );
 };
