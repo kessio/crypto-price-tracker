@@ -25,13 +25,23 @@ const Coins = () => {
             if (searchTerm === '') {
               return coin;
             }
-            if (coin.name === searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1) || coin.symbol === searchTerm.toUpperCase()) {
+            if (coin.name === searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1)
+                || coin.symbol === searchTerm.toUpperCase()) {
               return coin;
             }
+            return false;
           }).map(({
             id, name, symbol, priceUsd, changePercent24Hr,
           }, index) => (
-            <DisplayCoins key={id} id={id} name={name} symbol={symbol} priceUsd={priceUsd} changePercent24Hr={changePercent24Hr} index={index} />
+            <DisplayCoins
+              key={id}
+              id={id}
+              name={name}
+              symbol={symbol}
+              priceUsd={priceUsd}
+              changePercent24Hr={changePercent24Hr}
+              index={index}
+            />
           ))
        }
       </div>
