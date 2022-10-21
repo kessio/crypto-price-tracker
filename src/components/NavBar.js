@@ -1,8 +1,7 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import { FaBars, FaTimes, FaSistrix } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { BsFillMicFill } from 'react-icons/bs';
-import SearchBar from './SearchCoin';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -13,7 +12,7 @@ const NavBar = () => {
     },
     {
       id: 2,
-      name: 'Coins',
+      name: 'Details',
     },
   ];
   return (

@@ -10,7 +10,7 @@ const Coins = () => {
 
   return (
     <div>
-      <div className="relative block">
+      <div className="relative">
         <input
           className="w-full bg-white placeholder:font-italitc border border-slate-400 drop-shadow-md rounded-md py-2 pl-3 pr-10 outline-light text-dark"
           placeholder="Search Coin"
@@ -31,7 +31,7 @@ const Coins = () => {
           }).map(({
             id, name, symbol, priceUsd, changePercent24Hr,
           }, index) => (
-            <DisplayCoins key={id} name={name} symbol={symbol} priceUsd={priceUsd} changePercent24Hr={changePercent24Hr} index={index} />
+            <DisplayCoins key={id} id={id} name={name} symbol={symbol} priceUsd={priceUsd} changePercent24Hr={changePercent24Hr} index={index} />
           ))
        }
       </div>

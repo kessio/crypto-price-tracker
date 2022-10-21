@@ -1,9 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { FaCaretUp, FaCaretDown } from 'react-icons/fa';
+import { FaCaretUp, FaCaretDown, FaArrowCircleRight } from 'react-icons/fa';
 
 const DisplayCoins = ({
-  symbol, priceUsd, changePercent24Hr, index,
+  symbol, priceUsd, changePercent24Hr, index, id
 }) => {
   const priceToNumber = Number(priceUsd);
   const priceToDecimal = (priceToNumber).toLocaleString(undefined);
@@ -14,7 +15,9 @@ const DisplayCoins = ({
 
   return (
 
-    <div className={newIndex % 2 === 0 ? 'bg-light w-1/2 h-36 border-b-2 border-darkCard' : 'bg-dark w-1/2 h-36'}>
+    <div className= 'bg-light w-1/2 h-36 border-b-2 border-darkCard md:w-1/4'>
+      
+      <Link to={`/coin/${id}`}><FaArrowCircleRight className="w-100 float-right mt-2 mr-3 text-white" /></Link>
       <div className="ml-10 mt-5">
         <span className="flex text-3xl text-white font-lato font-extrabold">{symbol}</span>
       </div>

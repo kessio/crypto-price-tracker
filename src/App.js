@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Home from './components/Home';
-import NavBar from './components/NavBar';
 import { fetchCoins } from './redux/feature/price/prices';
+import Details from './components/Details';
 
 function App() {
   const dispatch = useDispatch();
@@ -12,8 +13,11 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/coin/:id" element={<Details />} />
+      </Routes>
     </div>
   );
 }
