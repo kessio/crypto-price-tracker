@@ -14,33 +14,32 @@ const DisplayCoins = ({
   const changePercentToDecimal = chnagePercentToNumber.toFixed(2);
 
   return (
-  
-      <div className="bg-light w-1/2 h-36 border-b-2 border-darkCard md:w-1/4">
-        <Link to={`/coin/${id}`}><FaArrowCircleRight className="w-100 float-right mt-2 mr-3 text-white" /></Link>
-        <div className="ml-10 mt-5">
-          <span className="flex text-3xl text-white font-lato font-extrabold">{symbol}</span>
-        </div>
-        <div className="ml-8 mt-5 flex flex-col">
-          <span className="text-1xl text-white font-lato font-bold">
-            $
-            {priceToDecimal}
-          </span>
-          <div className="flex mt-3">
-            <span>
-              {
+
+    <div className="bg-light w-1/2 h-36 border-b-2 border-darkCard md:w-1/4">
+      <Link to={`/coin/${id}`}><FaArrowCircleRight className="w-100 float-right mt-2 mr-3 text-white" /></Link>
+      <div className="ml-10 mt-5">
+        <span className="flex text-3xl text-white font-lato font-extrabold">{symbol}</span>
+      </div>
+      <div className="ml-8 mt-5 flex flex-col">
+        <span className="text-1xl text-white font-lato font-bold">
+          $
+          {priceToDecimal}
+        </span>
+        <div className="flex mt-3">
+          <span>
+            {
 
             changePercentToDecimal > 0
               ? <FaCaretUp size={20} color="#7CFC00" /> : <FaCaretDown size={20} color="red" />
             }
-            </span>
-            <span className="text-white font-semibold">
-              {changePercentToDecimal}
-              %
-            </span>
-          </div>
+          </span>
+          <span className="text-white font-semibold">
+            {changePercentToDecimal}
+            %
+          </span>
         </div>
       </div>
-    
+    </div>
 
   );
 };
