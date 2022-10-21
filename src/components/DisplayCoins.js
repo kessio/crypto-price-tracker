@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { FaCaretUp, FaCaretDown, FaArrowCircleRight } from 'react-icons/fa';
 
 const DisplayCoins = ({
-  symbol, priceUsd, changePercent24Hr, index, id
+  symbol, priceUsd, changePercent24Hr, id
 }) => {
   const priceToNumber = Number(priceUsd);
   const priceToDecimal = (priceToNumber).toLocaleString(undefined);

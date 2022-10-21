@@ -7,9 +7,12 @@ const allReducers = combineReducers({
   coinDetails: coinDetailsSlice 
 })
 
-const store = configureStore({
-  reducer: allReducers
-  
+// use setup store so that it can be easy to setup store in the test-utils
+const setupStore = preloadedState => {    
+return configureStore({
+  reducer: allReducers,
+  preloadedState
 });
+}
 
-export default store;
+export default setupStore;
