@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kessio.github.io/crypto-price-tracker/",
   "name": "crypto-price-tracker",
   "version": "0.1.0",
   "private": true,
