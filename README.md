@@ -18,6 +18,9 @@
 
 ## ScreenShot
 
+![](home_screenshot.PNG)
+
+![](details_screenshot.PNG)
 
 
 ## Getting Started
