@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# crypto-price-tracker
 
 > Crypto-price-tracker is a web application that fetches the top 100 cryptocurrency from an api, displays ttem for users and users can click on each to check more details about the cryptocurrency. Redux has been used for state management, react testing library and jest has been used to test various redux functions and react components.
 
@@ -69,6 +69,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 [coincap](https://docs.coincap.io/) whose API was used
+[original design guideline followed](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) [by Nelson Sakwa on Behance.](https://www.behance.net/sakwadesignstudio)
 
 - Hat tip to anyone whose code was used
 

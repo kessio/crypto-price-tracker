@@ -11,7 +11,7 @@ const DetailsNav = ({ name }) => {
     <nav className="flex justify-between items-center w-full
         h-20 text-white fixed bg-nav py-2 px-4"
     >
-      <ul className="md:hidden flex flex-row justify-between w-screen pt-4">
+      <ul className="flex flex-row justify-between w-screen pt-4">
         <li><FaAngleLeft size={35} onClick={() => navigate(-1)} /></li>
         <li className="font-lato">{name}</li>
         <BsFillMicFill />
