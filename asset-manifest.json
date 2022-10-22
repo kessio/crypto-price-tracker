@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crypto-price-tracker/static/css/main.7f108866.css",
+    "main.js": "/crypto-price-tracker/static/js/main.69f5a1cb.js",
+    "index.html": "/crypto-price-tracker/index.html",
+    "main.7f108866.css.map": "/crypto-price-tracker/static/css/main.7f108866.css.map",
+    "main.69f5a1cb.js.map": "/crypto-price-tracker/static/js/main.69f5a1cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f108866.css",
+    "static/js/main.69f5a1cb.js"
+  ]
+}
