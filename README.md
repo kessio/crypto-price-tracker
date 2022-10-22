@@ -4,7 +4,6 @@
 
 > Crypto-price-tracker is a web application that fetches the top 100 cryptocurrency from an api, displays ttem for users and users can click on each to check more details about the cryptocurrency. Redux has been used for state management, react testing library and jest has been used to test various redux functions and react components.
 
-
 ## Built With
 
 - Major languages : Html5, Javascript, CSS
