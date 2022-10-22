@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { BsFillMicFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
