@@ -15,7 +15,7 @@
 
 [Live Demo Link](https://livedemo.com)
 
-[Video Link]()
+[Video Link](https://www.loom.com/share/886a84f62de0497abe4d227d4a5b71da)
 
 
 ## Getting Started
