@@ -11,6 +11,7 @@ const Details = () => {
 
   const { id } = useParams();
   const dispatch = useDispatch();
+  // eslint-disable-next-line
   useEffect(() => {
     dispatch(fetchCoinDetails(id));
   }, []);
