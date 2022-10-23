@@ -12,7 +12,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://jade-strudel-aac093.netlify.app)
+[Live Demo Link](https://teal-banoffee-1720f7.netlify.app/)
 
 [Video Link](https://www.loom.com/share/886a84f62de0497abe4d227d4a5b71da)
 
