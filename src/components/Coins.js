@@ -1,24 +1,16 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import React from 'react';
 import { useSelector } from 'react-redux';
 import DisplayCoins from './DisplayCoins';
 
-const Coins = () => {
+const Coins = ({ searchTerm }) => {
   const prices = useSelector((state) => state.prices);
   const coinsList = prices.lists;
   const coinsAray = coinsList.data;
-  const [searchTerm, setSearchTerm] = useState('');
 
   return (
     <div>
-      <div className="relative">
-        <input
-          className="w-full bg-white placeholder:font-italitc border border-slate-400 drop-shadow-md rounded-md py-2 pl-3 pr-10 outline-light text-dark"
-          placeholder="Search Coin"
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+
       <div className="flex flex-wrap">
         {
           coinsAray?.filter((coin) => {
